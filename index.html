@@ -1,2 +1,115 @@
-# Ashfall software
-Godspeed, good things will come soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashfall Software</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1a1a2e;
+      color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 600px;
+    }
+
+    .studio-name {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      color: #f0e6d3;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #8a8a9a;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    .gif-wrapper {
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gif-wrapper img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      image-rendering: pixelated;
+    }
+
+    .coming-soon {
+      font-size: 1.25rem;
+      color: #c0a882;
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #8a8a9a;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .links a:hover {
+      color: #f0e6d3;
+    }
+
+    .copyright {
+      position: fixed;
+      bottom: 1rem;
+      font-size: 0.75rem;
+      color: #4a4a5a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="studio-name">Ashfall Software</h1>
+    <p class="tagline">Godspeed, good things will come soon.</p>
+
+    <div class="gif-wrapper">
+      <img src="assets/fishing.gif" alt="Fishing animation from our upcoming game">
+    </div>
+
+    <p class="coming-soon">Something is brewing...</p>
+
+    <div class="links">
+      <a href="https://github.com/Ashfall-Software" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://tsunderick.itch.io/bar-game" target="_blank" rel="noopener">Play on itch.io</a>
+    </div>
+  </div>
+
+  <div class="copyright">&copy; 2026 Ashfall Software</div>
+</body>
+</html>
