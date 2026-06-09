@@ -101,8 +101,18 @@
     .tagline {
       font-size: 1.25rem;
       color: #a9b1d6;
-      margin-bottom: 2.5rem;
+      margin-bottom: 0.5rem;
       font-style: italic;
+    }
+
+    .studio-description {
+      font-size: 0.9375rem;
+      color: #565f89;
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
     }
 
     .gif-wrapper {
@@ -197,16 +207,25 @@
       color: #c0caf5;
     }
 
-    .team-member img {
+    .team-member a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .team-member a img {
       width: 80px;
       height: 80px;
       border-radius: 50%;
       margin-bottom: 0.75rem;
       border: 2px solid #414868;
       image-rendering: auto;
+      transition: border-color 0.2s;
     }
 
-    .team-member:hover img {
+    .team-member:hover a img {
       border-color: #ff757f;
     }
 
@@ -244,6 +263,8 @@
       <img src="assets/fishing.gif" alt="Fishing animation from our upcoming game">
     </div>
 
+    <p class="studio-description">A small indie game studio focused on bringing passion into game development, with a focus on the code quality of our products.</p>
+
     <p class="coming-soon">Our first game is brewing...</p>
 
     <div class="links">
@@ -255,24 +276,30 @@
       <h2>Party Members</h2>
       <p class="team-description">Three fuckos from Mexico working on our dream to make videogames</p>
       <div class="team-grid">
-        <a href="https://tsunderick.space/" class="team-member" target="_blank" rel="noopener">
-          <img src="https://avatars.githubusercontent.com/u/31434516?v=4" alt="tsunderick">
-          <span class="name">Tsunderick</span>
+        <div class="team-member">
+          <a href="https://tsunderick.space/" target="_blank" rel="noopener">
+            <img src="https://avatars.githubusercontent.com/u/31434516?v=4" alt="tsunderick">
+            <span class="name">Tsunderick</span>
+          </a>
           <span class="role">Project Manager & Developer</span>
           <a href="mailto:x@ashfallsoftware.com" class="email">x@ashfallsoftware.com</a>
-        </a>
-        <a href="https://github.com/slimmario04" class="team-member" target="_blank" rel="noopener">
-          <img src="https://avatars.githubusercontent.com/u/233818643?v=4" alt="slimmario04">
-          <span class="name">Slimmario</span>
+        </div>
+        <div class="team-member">
+          <a href="https://github.com/slimmario04" target="_blank" rel="noopener">
+            <img src="https://avatars.githubusercontent.com/u/233818643?v=4" alt="slimmario04">
+            <span class="name">Slimmario</span>
+          </a>
           <span class="role">Developer & Design</span>
           <a href="mailto:robomario@ashfallsoftware.com" class="email">robomario@ashfallsoftware.com</a>
-        </a>
-        <a href="https://www.instagram.com/azva_01/" class="team-member" target="_blank" rel="noopener">
-          <img src="https://avatars.githubusercontent.com/u/152651812?v=4" alt="Azva01">
-          <span class="name">Azva01</span>
+        </div>
+        <div class="team-member">
+          <a href="https://www.instagram.com/azva_01/" target="_blank" rel="noopener">
+            <img src="https://avatars.githubusercontent.com/u/152651812?v=4" alt="Azva01">
+            <span class="name">Azva01</span>
+          </a>
           <span class="role">Lead Designer</span>
           <a href="mailto:azva01@ashfallsoftware.com" class="email">azva01@ashfallsoftware.com</a>
-        </a>
+        </div>
       </div>
     </div>
   </div>
