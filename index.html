@@ -5,7 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ashfall Software</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Extra Light.otf') format('opentype');
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Extra Light Italic.otf') format('opentype');
+      font-weight: 200;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Light Italic.otf') format('opentype');
+      font-weight: 300;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Italic.otf') format('opentype');
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Medium Italic.otf') format('opentype');
+      font-weight: 500;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Operator Mono';
+      src: url('assets/fonts/Operator Mono - Bold Italic.otf') format('opentype');
+      font-weight: 700;
+      font-style: italic;
+    }
 
     * {
       margin: 0;
@@ -14,21 +73,21 @@
     }
 
     body {
-      background-color: #1a1a2e;
-      color: #e0e0e0;
-      font-family: 'Inter', sans-serif;
+      background-color: #24283b;
+      color: lightgray;
+      font-family: 'Operator Mono', monospace;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
+      overflow-y: auto;
     }
 
     .container {
       text-align: center;
       padding: 2rem;
-      max-width: 600px;
+      max-width: 850px;
     }
 
     .studio-name {
@@ -36,12 +95,12 @@
       font-weight: 600;
       letter-spacing: 0.05em;
       margin-bottom: 0.5rem;
-      color: #f0e6d3;
+      color: #bb9af7;
     }
 
     .tagline {
       font-size: 1.25rem;
-      color: #8a8a9a;
+      color: #a0aac0;
       margin-bottom: 2.5rem;
       font-style: italic;
     }
@@ -53,7 +112,7 @@
     }
 
     .gif-wrapper img {
-      max-width: 300px;
+      max-width: 800px;
       width: 100%;
       height: auto;
       border-radius: 8px;
@@ -62,7 +121,7 @@
 
     .coming-soon {
       font-size: 1.5625rem;
-      color: #c0a882;
+      color: #bb9af7;
       margin-bottom: 1rem;
     }
 
@@ -75,21 +134,92 @@
     }
 
     .links a {
-      color: #8a8a9a;
+      color: #a0aac0;
       text-decoration: none;
       font-size: 1.125rem;
       transition: color 0.2s;
     }
 
     .links a:hover {
-      color: #f0e6d3;
+      color: lightgray;
     }
 
     .copyright {
-      position: fixed;
-      bottom: 1rem;
+      margin-top: 3rem;
       font-size: 0.9375rem;
-      color: #4a4a5a;
+      color: #3b4261;
+    }
+
+    .team-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #3b4261;
+    }
+
+    .team-section h2 {
+      font-size: 1.375rem;
+      color: #c583ff;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .team-description {
+      font-size: 1rem;
+      color: #a0aac0;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: lightgray;
+      transition: transform 0.2s, color 0.2s;
+      padding: 1rem;
+      border-radius: 12px;
+      background: #292e42;
+      border: 1px solid #3b4261;
+      min-width: 140px;
+    }
+
+    .team-member:hover {
+      transform: translateY(-4px);
+      border-color: #bb9af7;
+      color: lightgray;
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 0.75rem;
+      border: 2px solid #414868;
+      image-rendering: auto;
+    }
+
+    .team-member:hover img {
+      border-color: #f7768e;
+    }
+
+    .team-member .name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #c583ff;
+      margin-bottom: 0.25rem;
+    }
+
+    .team-member .role {
+      font-size: 0.8125rem;
+      color: #a0aac0;
     }
   </style>
 </head>
@@ -107,6 +237,28 @@
     <div class="links">
       <a href="https://github.com/Ashfall-Software" target="_blank" rel="noopener">GitHub</a>
       <a href="https://tsunderick.itch.io/bar-game" target="_blank" rel="noopener">Play on itch.io</a>
+    </div>
+
+    <div class="team-section">
+      <h2>Party Members</h2>
+      <p class="team-description">Three indie developers from Mexico, creating games with heart.</p>
+      <div class="team-grid">
+        <a href="https://tsunderick.space/" class="team-member" target="_blank" rel="noopener">
+          <img src="https://avatars.githubusercontent.com/u/31434516?v=4" alt="tsunderick">
+          <span class="name">Tsunderick</span>
+          <span class="role">Project Manager & Developer</span>
+        </a>
+        <a href="https://github.com/slimmario04" class="team-member" target="_blank" rel="noopener">
+          <img src="https://avatars.githubusercontent.com/u/233818643?v=4" alt="slimmario04">
+          <span class="name">Slimmario</span>
+          <span class="role">Developer & Design</span>
+        </a>
+        <a href="https://www.instagram.com/azva_01/" class="team-member" target="_blank" rel="noopener">
+          <img src="https://avatars.githubusercontent.com/u/152651812?v=4" alt="Azva01">
+          <span class="name">Azva01</span>
+          <span class="role">Lead Designer</span>
+        </a>
+      </div>
     </div>
   </div>
 
