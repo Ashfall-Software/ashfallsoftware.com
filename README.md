@@ -7,6 +7,12 @@ Landing page for Ashfall Software. Static HTML, no build step required.
 Open `index.html` directly in a browser, or serve it:
 
 ```bash
+./serve.sh
+```
+
+Or manually:
+
+```bash
 python3 -m http.server 8000
 ```
 
