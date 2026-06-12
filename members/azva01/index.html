@@ -79,25 +79,6 @@
       margin-top: 0.75rem;
     }
 
-    /* Back link */
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      color: #ffc6c3;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-family: 'Operator Mono', monospace;
-      transition: color 0.2s;
-    }
-
-    .back-link:hover {
-      color: #fff;
-    }
-
     /* Main layout — two columns on desktop */
     .page-content {
       display: flex;
@@ -427,23 +408,12 @@
       .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       }
-
-      .back-link {
-        position: static;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
-      }
     }
   </style>
 </head>
 <body>
 
   <div class="banner">
-    <a href="../../" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Ashfall Software
-    </a>
     <h1>Azva01</h1>
     <span class="subtitle">Illustrator &middot; Designer &middot; Pixel Artist</span>
   </div>
